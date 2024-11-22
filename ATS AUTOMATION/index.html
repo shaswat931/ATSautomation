@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Automation</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Header Content -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <!-- Hamburger (menu toggle) button -->
+            <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+        <section class="welcome-section">
+            <div class="video-container" id="video-container"></div>
+            <div class="content">
+                <h1 class="animated-text">Welcome to ATS Automation</h1>
+                <p class="animated-text">
+                    At ATS Automation, we redefine modern living and business efficiency with innovative automation and security solutions. From advanced gate automation to state-of-the-art security systems, our goal is to bring convenience, safety, and reliability to your doorstep.
+                </p>
+                <p class="animated-text">
+                    With a commitment to excellence, we deliver quality products powered by cutting-edge technology and backed by unparalleled support. Trust us to transform your spaces into smart, secure, and seamless environments.
+                </p>
+            </div>
+        </section>
+        
+        
+        
+        
+
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="text-center mb-4">Main Entrance Automation Solutions</h1>
+                <p class="text-center mb-5">ATS Automation SECURITY SYSTEM is a professional company dealing in Main Entrance Automation Systems...</p>
+                <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#heroCarousel" data-slide-to="1"></li>
+                        <li data-target="#heroCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="industrial-gate.jpg" class="d-block w-100" alt="Industrial Sectional Doors">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Industrial Sectional Doors</h3>
+                                <p>Our industrial sectional doors are designed for heavy-duty use and provide excellent durability and security.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Highspeeddoorsitjsep15b.gif" class="d-block w-100" alt="High Speed Doors">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>High Speed Doors</h3>
+                                <p>Our high-speed doors are designed for fast and efficient operation, ideal for high-traffic areas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="motorized rolling shutters.jpg" class="d-block w-100" alt="Motorized Rolling Shutters">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Motorized Rolling Shutters</h3>
+                                <p>Our motorized rolling shutters provide excellent security and are easy to operate with a remote control.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+        </section>
+
+        <section class="our-products">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Products</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="industrial-gate.jpg" alt="Industrial Sectional Doors">
+                        <h3>Industrial Sectional Doors</h3>
+                        <p>Our industrial sectional doors are designed for heavy-duty use and provide excellent durability and security.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Highspeeddoorsitjsep15b.gif" alt="High Speed Doors">
+                        <h3>High Speed Doors</h3>
+                        <p>Our high-speed doors are designed for fast and efficient operation, ideal for high-traffic areas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="motorized rolling shutters.jpg" alt="Motorized Rolling Shutters">
+                        <h3>Motorized Rolling Shutters</h3>
+                        <p>Our motorized rolling shutters provide excellent security and are easy to operate with a remote control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="our-services">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-cog fa-3x"></i>
+                        <h3>Installation Services</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h3>Maintenance Services</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-headset fa-3x"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<section class="clients-section">
+    <h2 class="section-heading">Our Valued Clients</h2>
+    <p class="section-description">
+        At <strong>ATS Automation Security System</strong>, we are honored to collaborate with industry-leading organizations that trust us to deliver innovative, reliable, and high-quality automation and security solutions.
+    </p>
+
+    <div class="clients-list">
+        <div class="client">
+            <h3>Ekta Builder</h3>
+            <p>Known for constructing elegant and high-quality residential projects, Ekta Builder relies on ATS for automated security solutions that ensure their properties meet the highest safety standards.</p>
+        </div>
+        <div class="client">
+            <h3>NMS Group</h3>
+            <p>A prominent player in the construction industry, NMS Group benefits from our advanced automation technology, streamlining access control and providing secure environments for their clients and tenants.</p>
+        </div>
+        <div class="client">
+            <h3>Karachi Society</h3>
+            <p>This prestigious residential community trusts ATS Automation to bring state-of-the-art security solutions, creating a safe and serene environment for all its residents.</p>
+        </div>
+        <div class="client">
+            <h3>Mittal Group</h3>
+            <p>A well-known name in real estate, Mittal Group uses our tailored automation systems to enhance property security and offer residents a secure and convenient living experience.</p>
+        </div>
+        <div class="client">
+            <h3>Cristal Group</h3>
+            <p>As a visionary in the hospitality sector, Cristal Group has partnered with us to ensure their establishments are equipped with modern, reliable, and user-friendly security automation.</p>
+        </div>
+        <div class="client">
+            <h3>Shapoorji Pallonji Group</h3>
+            <p>With a rich history in construction, Shapoorji Pallonji Group values ATS’s innovative security and automation solutions to protect their assets and ensure smooth operational flow.</p>
+        </div>
+        <div class="client">
+            <h3>Ashar Group</h3>
+            <p>A prominent name in the real estate sector, Ashar Group benefits from our advanced automation systems to guarantee top-level security and operational efficiency in their properties.</p>
+        </div>
+        <div class="client">
+            <h3>Review Realty</h3>
+            <p>This rising star in the real estate industry trusts ATS to deliver cutting-edge security solutions that enhance property value and ensure client satisfaction.</p>
+        </div>
+        <div class="client">
+            <h3>Orchid Hotel</h3>
+            <p>Under the leadership of CEO Ashish Tiwari, Orchid Hotel prioritizes guest safety and comfort, relying on ATS’s sophisticated automation and security solutions to offer a seamless experience.</p>
+        </div>
+        <div class="client">
+            <h3>Elvess Developer</h3>
+            <p>Elvess Developer collaborates with ATS to provide reliable and efficient automation systems that ensure security and convenience for their projects.</p>
+        </div>
+    </div>
+</section>
+
+        
+        <section class="get-in-touch">
+            <div class="container">
+                <h2>Get in Touch with Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna.</p>
+                <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
+            </div>
+        </section>
+    </main>
+   
+    <div class="contact-icons">
+        <a href="https://wa.me/919967399864?text=Hi%20ATS%20Automation%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+           target="_blank" class="icon whatsapp" title="Chat on WhatsApp">
+          <img src="whatsapp (1).png" alt="WhatsApp">
+        </a>
+        <a href="mailto:atsautomation.info@gmail.com?subject=Inquiry%20about%20Automation%20Services&body=Hi%20ATS%20Automation%2C%0AI%20am%20interested%20in%20knowing%20more%20about%20your%20products%20and%20services.%0A" 
+           target="_blank" class="icon email" title="Send Email">
+          <img src="email.png" alt="Email">
+        </a>
+        <a href="tel:+919967399864" target="_blank" class="icon phone" title="Call Us">
+          <img src="phone-call.png" alt="Phone">
+        </a>
+      </div>
+      
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ATS Automation is a leading provider of entrance automation solutions, committed to delivering quality products and services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </main>
+            
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Main St, Nallasopara East, Vasai Virar, Maharashtra 401209</p>
+                    <p><i class="fas fa-phone"></i> +91 9967399864</p>
+                    <p><i class="fas fa-envelope"></i> atsautomation.info@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="powered-by">Powered by Nexus</p>
+                <p>&copy; 2024 ATS Automation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="contactIcons.js"></script>
+</body>
+</html>

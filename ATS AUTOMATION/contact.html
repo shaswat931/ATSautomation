@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ATS Automation</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <!-- Hamburger (menu toggle) button -->
+            <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, please feel free to contact us using the following methods:</p>
+
+        <div class="map-location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.6602310041553!2d72.8230650152098!3d19.412012246083954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9ad786af01f%3A0x728c177d769b8eaf!2sBokhire%20Rd%2C%20Santosh%20Bhuvan%2C%20Nalasopara%20East%2C%20Vasai-Virar%2C%20Maharashtra%20401209!5e0!3m2!1sen!2sin!4v1602073943217!5m2!1sen!2sin" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+            <div class="message-side">
+                <h3>Get in Touch</h3>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="communication-details">
+                    <h4>Communication Details</h4>
+                    <p><i class="fas fa-phone"></i> Phone: +91 9967399864 </p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="atsautomation.info@gmail.com">atsautomation.info@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address:Main St, Nallasopara East, Vasai Virar, Maharashtra 401209</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ATS Automation is a leading provider of entrance automation solutions, committed to delivering quality products and services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 9967399864 </p>
+                    <p><i class="fas fa-envelope"></i>atsautomation.info@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Street, Nallasopara East, Vasai Virar, Maharashtra</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <a href="https://wa.me/+919967399864?text=Hello!%20I'm%20interested%20in%20the%20automation%20and%20security%20solutions%20provided%20by%20ATS%20Automation%20Security%20System.%20Can%20you%20provide%20more%20information?" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+919967399864">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- Footer Bottom Section -->
+            <footer>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="powered-by">Powered by Nexus</p>
+                        <p>&copy; 2024 ATS Automation. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('active'); // Toggle the active class to show/hide the menu
+        }
+
+        // Optional: Close the menu when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('nav ul');
+            const toggle = document.querySelector('.menu-toggle');
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnToggle = toggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && menu.classList.contains('active')) {
+                menu.classList.remove('active'); // Close the menu
+            }
+        });
+    </script>
+</body>
+</html>
